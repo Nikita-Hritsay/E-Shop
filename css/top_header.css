@@ -1,0 +1,51 @@
+.top_header-section{
+    position: relative;
+    width: 100%;
+    padding: 1px;
+}
+
+.header-page{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-page_end{
+    display: flex;
+    align-items: center;
+}
+
+.header-page_nav{
+    margin-right: 15px;
+}
+
+.header-page_ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.header-page_li{
+    margin-right: 40px;
+}
+
+.header-page_link{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    position: relative;
+    color: green;
+}
+
+.headerlogo{
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    position: relative;
+}
