@@ -57,3 +57,11 @@
 .contacts_phone:hover{
     color: #a72d6c;
 }
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    list-style-type: none;
+    
+}
