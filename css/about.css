@@ -1,0 +1,29 @@
+.about-section{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.about-img{
+    max-width: 50%;
+    max-height: 550px;
+    position: relative;
+}
+
+.about_content{
+    padding-left: 60px;
+    padding-top: 20px;
+    color: white;
+    background-color: #363636;
+    padding-right: 30px;
+}
+
+.about_content_title{
+    font-size: 50px;
+}
+
+.about_content_text{
+    font-size: 20px;
+}

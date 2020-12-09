@@ -8,7 +8,7 @@
     padding-top: 5px;
     padding-bottom: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -18,7 +18,8 @@
 }
 
 .header-page_nav{
-    margin-right: 15px;
+    margin-left: 100px;
+    padding-right: 210px;
 }
 
 .header-page_ul{
@@ -38,14 +39,9 @@
     display: block;
     font-size: 18px;
     position: relative;
-    color: green;
+    color: #76b900;
 }
 
-.headerlogo{
-    text-decoration: none;
-    display: block;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    position: relative;
+.header_logo{
+    padding-left: 255px;
 }
