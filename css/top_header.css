@@ -45,3 +45,10 @@
 .header_logo{
     padding-left: 255px;
 }
+
+.acc-popup-btn{
+    color:  #76b900;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+}

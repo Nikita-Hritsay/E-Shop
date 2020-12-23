@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/accpopup.css">
+    
 </head>
 <body>
         <header class="top_header-section">
@@ -34,16 +36,14 @@
                                 </a>
                             </li>
                             <li class="header-page_li">
-                                <a class="header-page_link" href="#">
-                                    <span class="header-page_text">аккаунт</span>
-                                </a>
+                                <button class="acc-popup-btn" type="button" data-popup="accpopup">аккаунт</button>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>  
-
         </header>
+        
         <header class="main_header-section">
             <div class="main_header_lest_side">
                 <div class="main_header_item headerButton">
@@ -294,6 +294,55 @@
             </div>
         </section>
 
+        <!-- acc popup -->
 
+        <div class="accpopup">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <h2>Создание учетной записи</h2>
+                    <span class="close">&times;</span>
+                </div>
+
+                <div class="enter-field">
+                    <div class="popup-body">
+                        <div class="atr-ent">
+                            <span class="acc-atr">Имя</span>
+
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        <div class="atr-ent">
+                            <span class="acc-atr">Електронная почта</span>
+
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        <div class="atr-ent">
+                           <span class="acc-atr">Пароль</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="check-field">
+                    <span class="requirements">Требования к имени:</span>
+                    <p class="name-length">Минимальное количество символов - 8</p>
+                    
+                    <span class="requirements">Требования к електронной почте:</span>
+                    <p class="symbol-sob">Содержит специальный символ "@"</p>
+                    <p class="lat-letters">Состоит только из латинских символов</p>
+                    
+                    <span class="requirements">Требования к паролю:</span>
+                    <p class="lowercase-check">Наличие букв нижнего регистра</p>
+                    <p class="uppercase-check">Наличие букв верхнего регистра</p>
+                    <p class="nums-check">Наличие цифр</p>
+                    <p class="passwoed-length">Минимальное количество символов - 8</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/main.js"></script>
 </body>
 </html>
