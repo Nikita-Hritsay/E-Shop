@@ -296,50 +296,55 @@
 
         <!-- acc popup -->
 
+        
         <div class="accpopup">
             <div class="popup-content">
-                <div class="popup-header">
-                    <h2>Создание учетной записи</h2>
-                    <span class="close">&times;</span>
-                </div>
+                    <form action="#" id="form" class="accpopupform">
+                        <div class="popup-header">
+                            <h2>Создание учетной записи</h2>
+                            <span class="close">&times;</span>
+                        </div>
 
-                <div class="enter-check-field">
-                    <div class="enter-field">
-                        <div class="popup-body">
-                            <div class="atr-ent">
-                                <span class="acc-atr">Имя</span>
-                                <input id="name-input" type="text" class="form-input _req">
+                        <div class="enter-check-field">
+                            <div class="enter-field">
+                                <div class="popup-body">
+                                    <div class="atr-ent">
+                                        <span class="acc-atr">Имя</span>
+                                        <input id="name-input" type="text" class="form-input _req _name">
+                                        <span class="acc-req_name">*Должен содержать буквы верхнего и нижнего регистра и не содержать специальные знаки</span>
+                                    </div>
+                                </div>
+                                <div class="popup-body">
+                                    <div class="atr-ent">
+                                        <span class="acc-atr">Електронная почта</span>
+                                        <input id="mail-input" type="text" class="form-input _req _email">
+                                        <span class="acc-req_mail">*Должна содержать знак @</span>
+                                    </div>
+                                </div>
+                                <div class="popup-body">
+                                    <div class="atr-ent">
+                                    <span class="acc-atr">Пароль</span>
+                                    <input id="password-input" type="text" class="form-input _req">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="popup-body">
-                            <div class="atr-ent">
-                                <span class="acc-atr">Електронная почта</span>
-                                <input id="mail-input" type="text" class="form-input _req">
-                            </div>
-                        </div>
-                        <div class="popup-body">
-                            <div class="atr-ent">
-                            <span class="acc-atr">Пароль</span>
-                            <input id="password-input" type="text" class="form-input _req">
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="email_sender">Уведомлять вас о новостях у нас на сайте ?</div>
-                    <div class="option_send">
-                        <input id="sender_emails" type="radio" class="send_yes">
-                        <label for="sender_emails" class="option_label">Отправлять</label>
+                            <div class="email_sender">Уведомлять вас о новостях у нас на сайте ?</div>
+                            <div class="option_send">
+                                <input id="sender_emails" type="radio" class="send_yes">
+                                <label for="sender_emails" class="option_label">Отправлять</label>
+                            </div>
+                            <div class="option_send">
+                                <input id="no_sender_emails" type="radio" class="send_no">
+                                <label for="no_sender_emails" class="option_label">Не отправлять</label>
+                            </div>
+                            <div class="option_send">
+                                <input id="remember_user" type="checkbox" class="remember_user">
+                                <label for="remember_user" class="option_label">Запомнить меня</label>
+                            </div>
+                            <button type="submit" class="popup_btn_sumbit">Зарегестрироваться</button>
+                        </form>
                     </div>
-                    <div class="option_send">
-                        <input id="no_sender_emails" type="radio" class="send_no">
-                        <label for="no_sender_emails" class="option_label">Не отправлять</label>
-                    </div>
-                    <div class="option_send">
-                        <input id="remember_user" type="checkbox" class="remember_user">
-                        <label for="remember_user" class="option_label">Запомнить меня</label>
-                    </div>
-                    <button class="popup_btn_sumbit">Зарегестрироваться</button>
-                </div>
             </div>
         </div>
 

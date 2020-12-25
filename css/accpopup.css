@@ -90,3 +90,22 @@
     background: #74a71e;
     transition: .5s;
 }
+
+.form-input{
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 18px;
+    border: blue 1px solid;
+}
+
+.form-input._error{
+    box-shadow: 0 0 15px red;
+    transition: .5s; 
+}  
+
+.acc-req_name, .acc-req_mail{
+    padding-top: 4px;
+    font-size: 12px;
+}

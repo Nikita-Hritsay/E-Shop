@@ -87,30 +87,91 @@
     })
 })();
 
-;(function(){
-    const form = document.querySelector('accpopup');
+document.addEventListener('DOMContentLoaded', function(){
+    let form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
     async function formSend(e){
         e.preventDefault();
 
         let error = formValidate(form);
+        if(error == 0){
 
-        function formValidate(form){
-            let error = 0;
-            let formReq = document.querySelectorAll('._req');
-
-            for(let index = 0; index < formReq.length; index++){
-                const input = formReq[index];
-
-
-                
-
-            }
+        }else{
+            alert("Необходимо правильно заполнить обязательные поля")
         }
 
     }
+       function formValidate(form){
+           let error = 0;
+           let formReq = document.querySelectorAll('._req');
+           for(let index = 0; index < formReq.length; index++){
+               const input = formReq[index];
+               formRemoveError(input);
+               if(input.classList.contains('_email')){
+                   if(emailTest(input)){
+                       formAddError(input);
+                       error++;
+                   }
+               }else if(input.classList.contains('_name')){
+                if(nameTest(input)){
+                    formAddError(input);
+                    alert("Введите коректное имя!");
+                    error++;
+                }
+               }
+               else if(input.getAttribute("type") == "checkbox" && input.checked == false){
+                   formAddError(input);
+                   error++;
+               }else{
+                   if(input.value == ""){
+                       formAddError(input);
+                       error++;
+                   }
+               }
+           }
+           return error;
+       }
+       function formAddError(input){
+           input.parentElement.classList.add('_error');
+           input.classList.add('_error');
+       }
+       function formRemoveError(input){
+           input.parentElement.classList.remove('_error');
+           input.classList.remove('_error');
+       }
+
+       function nameTest(input){
+        var name = input.value;
+        console.log(name.length);
+        if(name.length == 0)
+        {
+            return true;
+        }
+        var sim = "!@#$%^&*()_+№;%:?*_+1234567890";
+        for(var i = 0; i < name.length; i++){
+            for(var j = 0; j < sim.length; j++){
+                if(name[i] == sim[j])
+                {
+                    return true;
+                }else if(i > 0 && (name[i].toUpperCase()==name[i]) == true){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 
 
-})()
+
+    function emailTest(input){
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+    }
+
+
+
+
+
+    
+})
 
