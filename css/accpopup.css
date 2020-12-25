@@ -23,15 +23,70 @@
 
 .popup-content{
     background: #fff;
-    padding: 70px 20px;
-    width: 700px;
+    padding: 20px 40px;
+    width: 600px;
     margin: 0;
     position: relative;
     border-radius: 20px;
 }
 
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 .close{
     position: relative;
     cursor: pointer;
+    padding: 10px 10px 10px 10px;
 }
 
+.enter-check-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.enter-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.atr-ent{
+    display: flex;
+    flex-direction: column;
+}
+
+.acc-atr{
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+.password-input, .mail-input, .name-input{
+    width: 300px;
+}
+
+.email_sender{
+    padding-top: 20px;
+}
+
+.option_send{
+    padding-top: 15px;
+}
+
+.popup_btn_sumbit{
+    margin-top: 30px;
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    border-radius: 10px;
+    border: 1px;
+    background: #92d126;
+}
+
+.popup_btn_sumbit:hover{
+    background: #74a71e;
+    transition: .5s;
+}

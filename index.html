@@ -303,41 +303,42 @@
                     <span class="close">&times;</span>
                 </div>
 
-                <div class="enter-field">
-                    <div class="popup-body">
-                        <div class="atr-ent">
-                            <span class="acc-atr">Имя</span>
-
+                <div class="enter-check-field">
+                    <div class="enter-field">
+                        <div class="popup-body">
+                            <div class="atr-ent">
+                                <span class="acc-atr">Имя</span>
+                                <input id="name-input" type="text" class="form-input _req">
+                            </div>
+                        </div>
+                        <div class="popup-body">
+                            <div class="atr-ent">
+                                <span class="acc-atr">Електронная почта</span>
+                                <input id="mail-input" type="text" class="form-input _req">
+                            </div>
+                        </div>
+                        <div class="popup-body">
+                            <div class="atr-ent">
+                            <span class="acc-atr">Пароль</span>
+                            <input id="password-input" type="text" class="form-input _req">
+                            </div>
                         </div>
                     </div>
-                    <div class="popup-body">
-                        <div class="atr-ent">
-                            <span class="acc-atr">Електронная почта</span>
 
-                        </div>
+                    <div class="email_sender">Уведомлять вас о новостях у нас на сайте ?</div>
+                    <div class="option_send">
+                        <input id="sender_emails" type="radio" class="send_yes">
+                        <label for="sender_emails" class="option_label">Отправлять</label>
                     </div>
-                    <div class="popup-body">
-                        <div class="atr-ent">
-                           <span class="acc-atr">Пароль</span>
-
-                        </div>
+                    <div class="option_send">
+                        <input id="no_sender_emails" type="radio" class="send_no">
+                        <label for="no_sender_emails" class="option_label">Не отправлять</label>
                     </div>
-                </div>
-
-                <div class="check-field">
-                    <span class="requirements">Требования к имени:</span>
-                    <p class="name-length">Минимальное количество символов - 8</p>
-                    
-                    <span class="requirements">Требования к електронной почте:</span>
-                    <p class="symbol-sob">Содержит специальный символ "@"</p>
-                    <p class="lat-letters">Состоит только из латинских символов</p>
-                    
-                    <span class="requirements">Требования к паролю:</span>
-                    <p class="lowercase-check">Наличие букв нижнего регистра</p>
-                    <p class="uppercase-check">Наличие букв верхнего регистра</p>
-                    <p class="nums-check">Наличие цифр</p>
-                    <p class="passwoed-length">Минимальное количество символов - 8</p>
-
+                    <div class="option_send">
+                        <input id="remember_user" type="checkbox" class="remember_user">
+                        <label for="remember_user" class="option_label">Запомнить меня</label>
+                    </div>
+                    <button class="popup_btn_sumbit">Зарегестрироваться</button>
                 </div>
             </div>
         </div>
