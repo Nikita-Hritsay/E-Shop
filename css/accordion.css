@@ -1,0 +1,56 @@
+.accordion-panel{
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+}   
+
+.accordion{
+    width: 500px;
+}
+
+.contentBX{
+    position: relative;
+    width: 500px;
+}
+
+.accordion .contentBX .label_accordion{
+    position: relative;
+    margin: 10px;
+    background: #2694af;
+    color: #fff;
+    cursor: pointer;
+    transition: 1s;
+    padding: 10px 10px 10px;
+}
+
+.accordion .contentBX .label_accordion::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    transition: 1s;
+}
+
+.accordion .contentBX.active .label_accordion::before{
+    content: '-';
+}
+
+.accordion .contentBX .content_accordion{
+    position: relative;
+    padding: 10px;
+    background: #fff;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    transition: 1s;
+    overflow-y: auto;
+}
+
+.accordion .contentBX.active .content_accordion{
+    height:150px;
+    padding: 10px;
+    display: block;
+    transition: 1s;
+}
