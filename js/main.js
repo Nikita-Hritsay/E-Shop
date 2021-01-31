@@ -1,4 +1,5 @@
 ;(function(){
+
     var body = document.querySelector("body");
     
     var closesAttr = function(item, attr){
